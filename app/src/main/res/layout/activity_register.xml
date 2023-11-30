@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="48dp"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:orientation="vertical"
+       >
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_marginTop="112dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng Ký"
+            android:textSize="48sp"
+           />
+        <RelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_width="107dp"
+            android:layout_height="6dp"
+          />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_marginTop="24dp">
+            <EditText
+                android:id="@+id/edt_email"
+                android:drawablePadding="6dp"
+                android:paddingHorizontal="12dp"
+                android:layout_width="316dp"
+                android:layout_height="56dp"
+                android:hint="Email . . ."
+
+         />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            android:layout_marginTop="24dp"
+          >
+            <EditText
+                android:inputType="textPassword"
+                android:hint="Mật khẩu . . ."
+                android:id="@+id/edt_password"
+                android:drawablePadding="6dp"
+                android:paddingHorizontal="12dp"
+                android:layout_width="316dp"
+                android:layout_height="56dp"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            android:layout_marginTop="24dp"
+          >
+            <EditText
+                android:inputType="textPassword"
+                android:hint="Nhập lại mật khẩu . . ."
+                android:id="@+id/edt_rePassword"
+                android:drawablePadding="6dp"
+                android:paddingHorizontal="12dp"
+                android:layout_width="316dp"
+                android:layout_height="56dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_marginTop="48dp"
+            android:layout_width="316dp"
+            android:layout_height="56dp"
+            android:text="Đăng Ký"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv_goLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bạn đã có tài khoản? Login"
+                android:textSize="14sp"/>
+            <RelativeLayout
+                android:layout_marginHorizontal="12dp"
+                android:layout_width="2dp"
+                android:layout_height="24dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
